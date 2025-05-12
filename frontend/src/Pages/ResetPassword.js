@@ -26,7 +26,7 @@ const ResetPassword = () => {
         toast.error(data.message);
       }
     } catch (error) {
-      toast.error("Something went wrong!");
+      toast.error(error.message);
     }
   };
 
