@@ -20,7 +20,7 @@ const NewPassword = () => {
       setErrorMessage('Passwords do not match.');
     }
     try{
-       const {data} = await axios.post('http://localhost:8000/users/newPassword',{email,password},{withCredentials:true});
+       const {data} = await axios.post('https://airbnb-clone-authentication.onrender.com/users/newPassword',{email,password},{withCredentials:true});
        if(data.success){
           toast.success(data.message);
           navigate("/");
