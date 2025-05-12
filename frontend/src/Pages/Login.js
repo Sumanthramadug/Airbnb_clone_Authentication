@@ -14,7 +14,7 @@ const Login = () => {
         e.preventDefault();
         if(state === 'SignUp'){
             try{
-                const {data}= await axios.post('http://localhost:8000/users/register',{name,email,password},{withCredentials:true});
+                const {data}= await axios.post('https://airbnb-clone-authentication.onrender.com/users/register',{name,email,password},{withCredentials:true});
                 if(data.success){
                     toast.success(data.message);
                     navigate("/");
@@ -28,7 +28,7 @@ const Login = () => {
             }
         }
         else{
-            const {data} = await axios.post('http://localhost:8000/users/login',{email,password},{withCredentials:true});
+            const {data} = await axios.post('https://airbnb-clone-authentication.onrender.com/users/login',{email,password},{withCredentials:true});
             try{
                 if(data.success){
                     navigate("/");
