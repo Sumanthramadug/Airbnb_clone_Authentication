@@ -1,0 +1,154 @@
+/* Wrapper for the whole layout */
+.wrapper {
+    min-height: calc(100vh - 60px); /* 60px assuming header height */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background-color: #f7f7f7;
+  }
+  
+  .container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 30px 35px;
+    background-color: #ffffff;
+    border-radius: 12px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    width: 100%;
+    max-width: 350px;
+    text-align: center;
+    margin-bottom:20px;
+    transform: translateY(-30px);
+  }
+  
+  .container h1 {
+    font-size: 26px;
+    font-weight: 600;
+    color: #ff385c;
+    margin-bottom: 10px;
+  }
+  
+  .container h2 {
+    font-size: 16px;
+    color: #8d8d8d;
+    margin-bottom: 25px;
+  }
+  
+  .container div {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    border: 1px solid #ccc;
+    padding: 8px 12px;
+    border-radius: 25px;
+    margin-bottom: 15px;
+    transition: border-color 0.3s ease;
+  }
+  
+  .container div:focus-within {
+    border-color: #191818;
+  }
+  
+  .container input {
+    flex: 1;
+    padding: 3px 13px;
+    font-size: 14px;
+    border: none;
+    outline: none;
+    color: #333;
+    border-radius: 20px;
+    transition: background-color 0.3s ease;
+  }
+  
+  .container input::placeholder {
+    color: #8d8d8d;
+  }
+  
+  .container input:focus {
+    background-color: #f9f9f9;
+  }
+  
+  .container img {
+    width: 18px;
+    height: 18px;
+    object-fit: contain;
+  }
+  
+  /* Forgot Password and Button Section */
+  .container p {
+    color: #8d8d8d;
+    font-size: 14px;
+    margin-top: 15px;
+    margin-bottom: 20px; /* Adds gap between Forgot Password and Submit button */
+  }
+  
+  .container p span {
+    color: #007a87;
+    text-decoration: none;
+    cursor: pointer;
+  }
+  
+  .container p span:hover {
+    text-decoration: underline;
+  }
+  
+  /* Button Styling */
+  .container button {
+    padding: 14px;
+    background-color: #ff385c;
+    color: white;
+    font-size: 16px;
+    font-weight: 600;
+    border-radius: 30px;
+    cursor: pointer;
+    width: 75%;
+    transition: all 0.3s ease;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    border: none;
+    margin-top: 10px; /* Adds space above button */
+  }
+  
+  .container button:hover {
+    background-color: #e40046;
+    transform: translateY(-2px);
+    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.15);
+  }
+  
+  .container button:focus {
+    outline: none;
+    box-shadow: 0 0 0 2px rgba(255, 56, 92, 0.5);
+  }
+  
+  /* Link Styling */
+  .link {
+    color: #007a87;
+    text-decoration: none;
+    cursor: pointer;
+  }
+  
+  .link:hover {
+    text-decoration: underline;
+  }
+  
+  .text-gray {
+    color: #8d8d8d;
+  }
+  
+  /* Spacing and text appearance for login/signup text */
+  .container p {
+    font-size: 14px;
+    color: #8d8d8d;
+    margin-top: 10px;
+  }
+  
+  .container p span {
+    color: #007a87;
+    cursor: pointer;
+  }
+  
+  .container p span:hover {
+    text-decoration: underline;
+  }
+  

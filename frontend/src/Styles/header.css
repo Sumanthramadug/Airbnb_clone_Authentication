@@ -1,0 +1,123 @@
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 14px 24px;
+    border-bottom: 1px solid #ddd;
+    box-shadow: 0 1px 4px rgba(0, 0, 0, 0.05);
+    background-color: white;
+    position: sticky;
+    top: 0;
+    z-index: 10;
+  }
+
+  .logo {
+    display: flex;
+    align-items: center;
+    font-size: 22px;
+    font-weight: 600;
+    gap: 8px;
+    color: #FF385C;
+    cursor: pointer;
+  }
+  
+  .logo .material-symbols-outlined {
+    font-size: 28px;
+  }
+  
+  /* Center Search Bar */
+  .locate {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    border: 1px solid #ddd;
+    border-radius: 999px;
+    padding: 8px 16px;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.04);
+    cursor: pointer;
+    transition: box-shadow 0.2s ease;
+  }
+  
+  .locate div {
+    font-size: 14px;
+    font-weight: 500;
+    color: #333;
+  }
+  
+  .locate i {
+    background-color: #FF385C;
+    color: white;
+    padding: 8px;
+    border-radius: 50%;
+    font-size: 12px;
+  }
+  
+  .locate .divider {
+    height: 20px;
+    width: 1px;
+    background-color: #ddd;
+  }
+  
+  /* Right Section */
+  .header-right {
+    display: flex;
+    align-items: center;
+    gap: 20px; /* increased gap from 18px to 20px */
+    font-size: 14px;
+    color: #333;
+  }
+  
+  .header-right p {
+    font-weight: 500;
+    cursor: pointer;
+  }
+  
+  .header-right i {
+    font-size: 18px;
+    cursor: pointer;
+  }
+  
+  
+  /* User Menu */
+  .user-menu {
+    display: flex;
+    align-items: center;
+    padding: 6px 12px;
+    border: 1px solid #ddd;
+    border-radius: 999px;
+    gap: 10px;
+    transition: box-shadow 0.2s ease;
+    cursor: pointer;
+    margin-left: 12px;
+  }
+  
+  .user-menu:hover {
+    box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+  }
+  
+  .user-menu i {
+    font-size: 16px;
+    color: #333;
+  }
+  
+  /* Hover Effects */
+  .locate:hover {
+    box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+  }
+  
+  .header-right p:hover,
+  .header-right i:hover {
+    color: #FF385C;
+  }
+  
+  /* Responsive */
+  @media (max-width: 768px) {
+    .locate {
+      display: none;
+    }
+  
+    .header-right p {
+      display: none;
+    }
+  }
+  
