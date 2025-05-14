@@ -4,7 +4,7 @@ const dotenv=require('dotenv').config();
 const PORT=process.env.PORT;
 const mongoose=require('./Config/mongodb');
 var cors=require('cors');
-const allowedOrigins = ['http://localhost:3000','http://127.0.0.1:3000']
+const allowedOrigins = ['https://airbnb-clone-authentication-2.onrender.com','http://127.0.0.1:3000']
 app.use(express.json());
 app.use(cors({origin: allowedOrigins,credentials:true}))
 
